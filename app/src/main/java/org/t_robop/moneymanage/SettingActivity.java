@@ -1,11 +1,10 @@
 package org.t_robop.moneymanage;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class SettingActivity extends AppCompatActivity {
 
@@ -35,7 +34,8 @@ public class SettingActivity extends AppCompatActivity {
         money=intent.getIntExtra("money",0);
         positionDate=intent.getIntExtra("position",0);
 
-        Tv.setText(money);
+        //TODO 文字列を出力するのにintが入ってた
+        Tv.setText(String.valueOf(money));
     }
 
     public void plus()

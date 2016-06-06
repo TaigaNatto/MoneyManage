@@ -7,14 +7,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends Activity {
 
@@ -122,18 +118,20 @@ public class MainActivity extends Activity {
             total=total+num;//totalに加算
         }
 
-        totalView.setText(total);//totalを出力
+        //TODO 文字列を出力するのにintが入ってた
+        totalView.setText(String.valueOf(total));//totalを出力
 
-        if(strList.size()>0) {
-
-        }
-        else {
-            strList.set(positionDate, String.valueOf(money));//strListのタップされた場所（position管理）に入力された物を入れる
-
-            AdapterReload(adapter, strList);//adapter更新
-
-            listView.setAdapter(adapter);//listViewにadapterを出力
-        }
+        //TODO Buttonをおした時の処理じゃないのに、おした時のことを書いてあって不明
+//        if(strList.size()>0) {
+//
+//        }
+//        else {
+//            strList.set(positionDate, String.valueOf(money));//strListのタップされた場所（position管理）に入力された物を入れる
+//
+//            AdapterReload(adapter, strList);//adapter更新
+//
+//            listView.setAdapter(adapter);//listViewにadapterを出力
+//        }
 
     }
     //要素追加処理
