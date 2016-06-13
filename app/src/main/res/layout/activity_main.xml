@@ -74,7 +74,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="リセット"
-            android:layout_weight="3"/>
+            android:layout_weight="3"
+            android:onClick="cle"/>
         <Button
             android:id="@+id/btn"
             android:layout_width="fill_parent"
